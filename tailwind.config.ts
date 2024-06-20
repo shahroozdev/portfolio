@@ -12,6 +12,7 @@ const config: Config = {
         DEFAULT: '15px',
       },
     },
+  
     screens: {
       sm: '640px',
       md: '768px',
@@ -19,6 +20,12 @@ const config: Config = {
       xl: '1200px',
     },
     extend: {
+      keyframes: {
+        heightAnimation: {
+          '0%': { height: '0' },
+          '100%': { height: '100px' }, // Adjust the height value as needed
+        },
+      },
       colors: {
         primary: '#131424',
         secondary: '#393A47',
@@ -32,6 +39,7 @@ const config: Config = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
+        'height': 'heightAnimation 6s linear inifinte',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
