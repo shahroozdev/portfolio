@@ -1,5 +1,6 @@
 import BottomCircle from '@/components/atoms/BottomCircle/BottomCircle'
 import BulbAnime from '@/components/atoms/BulbAnime/BulbAnime'
+import ServiceSlider from '@/components/molecules/ServiceSlider/ServiceSlider'
 import React from 'react'
 
 const Services = () => {
@@ -13,6 +14,9 @@ const Services = () => {
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus rerum, fugiat optio libero quam maiores cumque laudantium dicta, eum sunt eveniet omnis aspernatur ducimus dolor doloremque! Deserunt, ex harum?
                 </p>
+            </div>
+            <div className='w-full xl:max-w-[65%]'>
+            <ServiceSlider/>
             </div>
         </div>
        </div>

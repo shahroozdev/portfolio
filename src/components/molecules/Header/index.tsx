@@ -5,8 +5,8 @@ import React from "react";
 
 const Header = () => {
   return (
-   <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90x]">
-    <div className="container mx-auto">
+   <header className=" xl:bg-transparent  absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90x] ">
+    <div className="container mx-auto backdrop-blur-sm xl:backdrop-blur-0">
     <div className="flex flex-col lg:flex-row justify-between items-center">
     <Link href={'/'}>
     <Image src={'/logo.png'}
