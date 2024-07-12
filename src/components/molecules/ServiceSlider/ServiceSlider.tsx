@@ -5,9 +5,7 @@ import React, { ReactNode } from 'react'
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-;
-import { motion } from "framer-motion";
-import { fadeIn } from "@/components/variants";
+
 // import {Swiper} from 'swiper';
 import {Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination } from 'swiper/modules';
@@ -42,7 +40,9 @@ const ServiceSlider = () => {
                     <p className='max-w-[350px] leading-normal text-sm text'>{item?.description}</p>
                 </div>
                 <div className='text-3xl absolute bottom-2'>
-                    <i className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300'><Icon name={"rightArrowIcon"}/></i>
+                    {/* <i className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300'> */}
+                        <Icon name={"rightArrowIcon"} className="group-hover:-rotate-45 group-hover:text-accent transition-all duration-300"/>
+                    {/* </i> */}
                 </div>
                 </div>
             </SwiperSlide>

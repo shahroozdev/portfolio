@@ -19,12 +19,12 @@ export const aboutSectionList=[
 export const services=[
       {
         "name": "Frontend Development",
-        "description": "Building responsive and interactive user interfaces using HTML, CSS, JavaScript, and modern frameworks like React, Vue, or Angular.",
+        "description": "Building responsive and interactive user interfaces using HTML, CSS, JavaScript, and modern frameworks like React, Nextjs, Vue, or Angular.",
         "icon": "🌐"
       },
       {
         "name": "Backend Development",
-        "description": "Creating robust server-side applications and APIs using Node.js, Express, Django, Ruby on Rails, or other backend technologies.",
+        "description": "Creating robust server-side applications and APIs using Node.js, Express, Nest.js, or other backend technologies.",
         "icon": "🖥️"
       },
       {
@@ -83,5 +83,10 @@ export const services=[
         "icon": "🌎"
       }
     ]
+
+export const workImages=[
+  {imgs:['/images (1).jpeg','/images (2).jpeg','/images (3).jpeg','/images (4).jpeg']},
+  {imgs:['/images (5).jpeg','/images (6).jpeg','/images.jpeg','/images (1).jpeg']},
+]
 
   
