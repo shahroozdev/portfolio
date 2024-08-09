@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`page bg-site text-white bg-cover bo-no-repeat ${sora.variable} font-sora relative`}>
       {/* <TransitionProvider > */}
-      <TransitionDiv/>
+      {/* <TransitionDiv/> */}
         <TopImg/>
         <Nav/>
         <Header/>
