@@ -8,7 +8,7 @@ import { fadeIn } from "@/components/variants";
 
 const Services = () => {
   return (
-    <div className='h-screen w-screen bg-primary/30 flex items-center'>
+    <div className='h-screen w-screen bg-primary/30 flex items-center justify-center'>
        {/* <BottomCircle /> */}
        <div className='container pt-[20px]'>
         <div className='flex flex-col xl:flex-row gap-x-8'>

@@ -7,15 +7,15 @@ import Avatar from "@/components/atoms/Avatar/Avatar";
 import ParticlesContainer from "@/components/molecules/ParticlesContainer/ParticlesContainer";
 export default function Home() {
   return (
-    <div className="h-screen bg-primary/60 relative w-screen">
+    <div className="h-screen bg-primary/60 relative w-screen flex flex-col items-center justify-center gap-2">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:text-left h-full container mx-auto ">
+        <div className="text-center flex flex-col justify-center xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 mb-0"
           >
             Turning Concepts <br />
             into <span className="text-accent">Digital Innovations.</span>
@@ -32,9 +32,9 @@ export default function Home() {
             creativity, technology, and strategic execution to bring innovative
             visions to life.
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
+          {/* <div className="flex justify-center xl:hidden relative">
             <ProjectBtn />
-          </div>
+          </div> */}
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"

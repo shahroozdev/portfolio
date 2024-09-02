@@ -30,11 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-w-screen max-h-screen w-screen h-screen overflow-hidden bg-site text-white bg-cover bo-no-repeat ${sora.variable} font-sora relative`}>
+      <body className={`min-w-screen max-h-screen w-screen min-h-screen h-screen overflow-hidden bg-site text-white bg-cover bo-no-repeat ${sora.variable} font-sora relative`}>
         <TopImg/>
         <Nav/>
         <Header/>
-        <main className="flex items-center min-w-screen  min-h-screen justify-center overflow-hidden">{children}</main>
+        <main className="flex items-center min-w-screen min-h-full justify-center overflow-hidden">{children}</main>
       </body>
     </html>
   );

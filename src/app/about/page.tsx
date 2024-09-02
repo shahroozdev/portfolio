@@ -12,8 +12,8 @@ import CountUp from 'react-countup';
 const AboutPage = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="w-screen h-max pt-[100px] bg-primary/30 text-center xl:text-left">
-      {/* <BottomCircle /> */}
+    <div className="w-screen h-screen pt-[100px] bg-primary/30 text-center xl:text-left overflow-hidden">
+      <BottomCircle />
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"

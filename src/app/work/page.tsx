@@ -9,8 +9,7 @@ import WorkSlider from '@/components/molecules/workSlider/WorkSlider'
 
 const WorkPage = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 flex items-center xl:overflow-hidden overflow-y-auto'>
-       <BottomCircle />
+    <div className='h-full w-screen bg-primary/30 py-36 flex items-center overflow-hidden relative'>
        <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
             <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 mx-12 xl:mb-0 xl:mx-0'>
@@ -25,6 +24,7 @@ const WorkPage = () => {
         </div>
        </div>
        <BulbAnime/>
+        <BottomCircle />
     </div>
   )
 }
