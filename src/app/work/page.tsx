@@ -12,7 +12,7 @@ const WorkPage = () => {
     <div className='h-screen w-screen bg-primary/30 py-36 flex items-center justify-center overflow-hidden relative'>
        <div className='container mx-auto h-full'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
-            <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 mx-12 xl:mb-0 xl:mx-0'>
+            <div className='text-center flex xl:w-[30vw] w-full flex-col lg:text-left mb-4 mx-12 xl:mb-0 xl:mx-0'>
                 <motion.h2 variants={fadeIn('up', 0.3)} initial={"hidden"} animate={"show"} exit={"hidden"} className='h2 xl:mt-8'>My Work<span className='text-accent'>.</span></motion.h2>
                 <motion.em variants={fadeIn('up', 0.4)} initial={"hidden"} animate={"show"} exit={"hidden"} className='text-xs lg:text-base' >
                 Hello! I&apos;m a seasoned full-stack developer with a passion for crafting high-quality, responsive web applications. With extensive experience in both front-end and back-end technologies, I can bring your project to life with a seamless user experience and robust functionality.
