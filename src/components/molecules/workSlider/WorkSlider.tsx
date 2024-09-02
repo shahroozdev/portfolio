@@ -25,7 +25,7 @@ const WorkSlider = () => {
           {workImages?.map((item: { imgs: string[] }, idx: number) => {
               return(
               <SwiperSlide key={idx}>
-                <div className="grid grid-cols-2 xl:grid-rows-2 grid-rows-1 gap-4 max-w-max mx-auto">
+                <div className="grid grid-cols-2 gap-4 max-w-max mx-auto">
                 {item?.imgs?.map((ele:string, index:number)=>{
                     return(
                         <div key={index} className="relative rounded-lg overflow-hidden flex items-center justify-center group">
