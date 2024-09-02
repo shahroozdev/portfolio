@@ -33,7 +33,7 @@ const ServiceSlider = () => {
         {services?.map((item:{name:string, description:string, icon:ReactNode},idx:number)=>{
             return(
                 <SwiperSlide key={idx}>
-                <div className='bg-[rgba(65,47,123,0.15)] h-[300px] rounded-lg p-6 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300] relative'>
+                <div className='bg-[rgba(65,47,123,0.15)] h-[300px] rounded-lg p-6 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] hover:scale-105 transition-all duration-300] relative'>
                     <div className='text-4xl '>{item?.icon}</div>
                 <div className='my-2'>
                     <div className='mb-2 text-md'>{item?.name}</div>

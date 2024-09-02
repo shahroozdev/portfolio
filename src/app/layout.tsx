@@ -4,8 +4,6 @@ import "./globals.css";
 import TopImg from "@/components/molecules/TopImg/TopImg";
 import Nav from "@/components/molecules/Nav/Nav";
 import Header from "@/components/molecules/Header";
-import TransitionProvider from "@/lib/transitionProvider";
-import TransitionDiv from "@/components/molecules/Transition/transitionDiv";
 
 const poppins = Poppins({
   weight: ["400"],
@@ -32,14 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`page bg-site text-white bg-cover bo-no-repeat ${sora.variable} font-sora relative`}>
-      {/* <TransitionProvider > */}
-      {/* <TransitionDiv/> */}
+      <body className={`min-w-screen max-h-screen w-screen h-screen overflow-hidden bg-site text-white bg-cover bo-no-repeat ${sora.variable} font-sora relative`}>
         <TopImg/>
         <Nav/>
         <Header/>
-        {children}
-        {/* </TransitionProvider> */}
+        <main className="flex items-center min-w-screen  min-h-screen justify-center overflow-hidden">{children}</main>
       </body>
     </html>
   );

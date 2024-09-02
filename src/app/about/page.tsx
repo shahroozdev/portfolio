@@ -12,8 +12,8 @@ import CountUp from 'react-countup';
 const AboutPage = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full xl:h-auto bg-primary/30 py-32 text-center xl:text-left overflow-y-auto">
-      <BottomCircle />
+    <div className="w-screen h-max pt-[100px] bg-primary/30 text-center xl:text-left">
+      {/* <BottomCircle /> */}
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
@@ -23,7 +23,7 @@ const AboutPage = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center mb-40 gap-x-6 xl:flex-row">
+      <div className="container mx-auto flex flex-col items-center mb-40 gap-x-6 xl:flex-row">
         <div className="flex-1 flex flex-col  h-[480px]">
           <motion.h2 variants={fadeIn("right", 0.2)}
         initial="hidden"

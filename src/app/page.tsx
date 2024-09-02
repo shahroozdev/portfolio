@@ -7,9 +7,9 @@ import Avatar from "@/components/atoms/Avatar/Avatar";
 import ParticlesContainer from "@/components/molecules/ParticlesContainer/ParticlesContainer";
 export default function Home() {
   return (
-    <div className="h-full bg-primary/60 relative">
+    <div className="h-screen bg-primary/60 relative w-screen">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto ">
+        <div className="text-center flex flex-col justify-center xl:text-left h-full container mx-auto ">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
