@@ -19,7 +19,7 @@ const Header = () => {
       <Link href={'#'}><i className="cursor-pointer"><Icon name="youtubeIcon" color="#fff" fontSize="20px"/></i></Link>
       <i className="cursor-pointer"><Icon name="AxeIcon" color="#fff"/></i>
       <Link href={'https://www.facebook.com/profile.php?id=61564675637480'}><i className="cursor-pointer"><Icon name="faceBookicon" color="#fff"/></i></Link>
-      <Link href={'https://www.facebook.com/profile.php?id=61564675637480'}><i className="cursor-pointer"><Icon name="linkedInIcon" color="#fff"/></i></Link>
+      <Link href={'www.linkedin.com/in/m-shahrooz-altaf-dev'}><i className="cursor-pointer"><Icon name="linkedInIcon" color="#fff"/></i></Link>
       <i className="cursor-pointer"><Icon name="instaIcon" color="#fff"/></i>
     </div>
     </div>

@@ -12,7 +12,7 @@ import CountUp from 'react-countup';
 const AboutPage = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="w-screen h-screen pt-[100px] bg-primary/30 text-center xl:text-left overflow-hidden">
+    <div className="w-screen h-screen bg-primary/30 text-center xl:text-left overflow-hidden flex items-center relative">
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
@@ -22,8 +22,8 @@ const AboutPage = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto flex flex-col items-center mb-40 gap-x-6 xl:flex-row">
-        <div className="flex-1 flex flex-col  h-[480px]">
+      <div className="container mx-auto flex flex-col items-center gap-x-6 xl:flex-row max-h-[400px] h-full">
+        <div className="flex-1 flex flex-col">
           <motion.h2 variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -66,7 +66,7 @@ const AboutPage = () => {
         <motion.div variants={fadeIn("left", 0.4)}
         initial="hidden"
         animate="show"
-        exit="hidden" className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+        exit="hidden" className="flex flex-col w-full xl:max-w-[48%] h-full">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutSectionList?.map((item: any, idx: number) => (
               <div
@@ -92,9 +92,12 @@ const AboutPage = () => {
                 >
                   <div className="font-light mb-1 md:mb-0 text-xs lg:text-base">{ele?.subT}</div>
                   {ele?.insti && <div className="hidden md:block"> - </div>}
+                  <div className="flex gap-2">
                   <div>{ele?.insti}</div>
                   <div className="hidden md:block"> - </div>
+                  {index !== 0 &&<div className="block md:hidden">| </div>}
                   <div>{ele?.stage}</div>
+                  </div>
                   <div className="flex gap-x-4 text-white flex-wrap">
                     {ele?.icon?.map((ele: string, index: number) => {
                       return <Icon key={index} name={ele} />;
