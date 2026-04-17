@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-6xl font-semibold mb-4">
-            Let's <span className="text-accent">Connect.</span>
+            Let&apos;s <span className="text-accent">Connect.</span>
           </h2>
           <p className="text-white/60 text-base md:text-lg">
             Feel free to reach out through any of these channels
@@ -73,7 +73,7 @@ const Contact = () => {
             </div>
             <div className="text-center">
               <div className="text-white font-semibold text-lg mb-1">LinkedIn</div>
-              <div className="text-white/60 text-sm">Let's Connect</div>
+              <div className="text-white/60 text-sm">Let&apos;s Connect</div>
             </div>
           </a>
         </div>
