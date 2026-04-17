@@ -79,7 +79,7 @@ const WorkSlider = () => {
       <Swiper
         spaceBetween={10}
         modules={[Pagination, Navigation]}
-        pagination={{ clickable: true }}
+        pagination={false}
         navigation={true}
         freeMode={true}
         className="sm:h-[400px] sm-max:h-[400px]"
@@ -89,10 +89,10 @@ const WorkSlider = () => {
                 const project = projects[item.projectIndexes[index]];
                 return (
                   <SwiperSlide key={`${idx}-${index}`}>
-                    <div className="relative w-full h-full group cursor-pointer">
+                    <div className="relative w-full h-full group cursor-pointer rounded-2xl border overflow-hidden">
                       <Image src={ele} width={1000} height={1000} alt={project.title} className="w-full h-full object-cover object-center"/>
-                      <div className="absolute top-6 left-6 z-20">
-                        <h3 className="text-3xl md:text-4xl font-bold bg-black/10 backdrop-blur-md px-6 py-3 rounded-lg drop-shadow-2xl border border-white/20">
+                      <div className="absolute bottom-0 left-0 right-0 z-20">
+                        <h3 className="text-3xl md:text-4xl font-bold bg-black/10 backdrop-blur-md px-6 py-3 drop-shadow-2xl border-t border-white/20 whitespace-nowrap overflow-hidden text-ellipsis">
                           <span className="text-white">{project.title.split(' ').slice(0, -1).join(' ')}</span>{' '}
                           <span className="text-accent">{project.title.split(' ').slice(-1)}</span>
                         </h3>
