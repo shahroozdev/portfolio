@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(npm view *)",
-      "Bash(pnpm run *)"
+      "Bash(pnpm run *)",
+      "Bash(curl -s http://localhost:3000/work)",
+      "Bash(node -e \"const data = require\\('./src/constant/constant.tsx'\\); console.log\\('Projects count:', data.projects?.length || 'undefined'\\)\")",
+      "Bash(curl -s http://localhost:3000/work -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s http://localhost:3000 -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s http://localhost:3003/work -o /dev/null -w \"%{http_code}\")"
     ]
   }
 }
