@@ -32,7 +32,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }
         {/* Fixed Header */}
         <div className="sticky top-0 z-50 bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900 px-8 py-6 border-b border-purple-500/30 backdrop-blur-md rounded-t-2xl flex items-center justify-between">
           {title && (
-            <h2 className="text-4xl md:text-5xl font-bold text-white pr-12">
+            <h2 className="sm:text-2xl text-lg md:text-4xl font-bold text-white pr-12">
               {title}
             </h2>
           )}
